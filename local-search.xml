@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>这是一篇测试文章</title>
+    <link href="/post/b44af412/"/>
+    <url>/post/b44af412/</url>
+    
+    <content type="html"><![CDATA[<h1 id="这是黄晓红写的一篇文章"><a href="#这是黄晓红写的一篇文章" class="headerlink" title="这是黄晓红写的一篇文章"></a>这是黄晓红写的一篇文章</h1><p>本博客建立于2025-01-02 </p><p>简单的介绍一下我自己</p><p>大家好！<br>我叫黄晓红，是一个活泼、可爱又开朗的小姑娘。</p><p>我今年20岁了，有着一米六的身高，一对闪闪发光的眼睛，在有着高耸鼻梁的鼻子下面长着一张能说会道的樱桃形的小嘴巴，笑起来还挂着小酒窝。</p><p>我是一个粗心大意的小姑娘。记得小时候的数学小测验的时候，我考了87分。原本我可以考90分以上的，都是因为我粗心大意，把两道应用题的得数算错了，终那两道题使我丢了两分。我的爸爸妈妈和老师总是叫我“小马虎”呢</p><p>我又是一个特别爱看书的小姑娘。呵呵…不是我吹牛，现在，我家的书可以搭一间房子那么高。<br>听了我的自我介绍，你们应该了解我了吧？嘿嘿！这就是一个多姿多彩的我自己，怎么样，不错吧！<br>谢谢。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>博客</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>git的常用命令及hexo部署githubpages</title>
+    <link href="/post/4d989bd4/"/>
+    <url>/post/4d989bd4/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Git-操作示例"><a href="#Git-操作示例" class="headerlink" title="Git 操作示例"></a>Git 操作示例</h1><p>以 <code>https://github.com/xulong0826/blog-code</code> 为例  </p><h2 id="克隆远程仓库"><a href="#克隆远程仓库" class="headerlink" title="克隆远程仓库"></a>克隆远程仓库</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> https://github.com/xulong0826/blog-code<br></code></pre></td></tr></table></figure><h2 id="拉取更新"><a href="#拉取更新" class="headerlink" title="拉取更新"></a>拉取更新</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git pull<br></code></pre></td></tr></table></figure><h2 id="查看远程仓库地址"><a href="#查看远程仓库地址" class="headerlink" title="查看远程仓库地址"></a>查看远程仓库地址</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git remote -v<br></code></pre></td></tr></table></figure><h2 id="修改远程仓库地址"><a href="#修改远程仓库地址" class="headerlink" title="修改远程仓库地址"></a>修改远程仓库地址</h2><h3 id="删除指定的远程仓库地址："><a href="#删除指定的远程仓库地址：" class="headerlink" title="删除指定的远程仓库地址："></a>删除指定的远程仓库地址：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git remote set-url --delete (--push) origin https://github.com/xulong0826/blog-code.git<br></code></pre></td></tr></table></figure><h3 id="添加新的远程仓库地址："><a href="#添加新的远程仓库地址：" class="headerlink" title="添加新的远程仓库地址："></a>添加新的远程仓库地址：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git remote set-url --add origin https://github.com/xulong0826/blog-code.git<br></code></pre></td></tr></table></figure><h2 id="添加文件到暂存区"><a href="#添加文件到暂存区" class="headerlink" title="添加文件到暂存区"></a>添加文件到暂存区</h2><h3 id="添加所有更改："><a href="#添加所有更改：" class="headerlink" title="添加所有更改："></a>添加所有更改：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git add .<br></code></pre></td></tr></table></figure><h3 id="单独添加指定文件："><a href="#单独添加指定文件：" class="headerlink" title="单独添加指定文件："></a>单独添加指定文件：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git add &lt;文件名/文件夹&gt;  <span class="hljs-comment"># 如 xx.md 或 xx.jpg</span><br></code></pre></td></tr></table></figure><h2 id="提交更改"><a href="#提交更改" class="headerlink" title="提交更改"></a>提交更改</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git commit -m <span class="hljs-string">&quot;update the project&quot;</span><br></code></pre></td></tr></table></figure><h2 id="推送更改到远程分支"><a href="#推送更改到远程分支" class="headerlink" title="推送更改到远程分支"></a>推送更改到远程分支</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git push origin main<br></code></pre></td></tr></table></figure><h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><ul><li>本地分支：<code>origin</code>  </li><li>远程分支：<code>main</code></li></ul><hr><h1 id="Hexo-配置"><a href="#Hexo-配置" class="headerlink" title="Hexo 配置"></a>Hexo 配置</h1><h2 id="安装-Hexo-Git-部署插件"><a href="#安装-Hexo-Git-部署插件" class="headerlink" title="安装 Hexo Git 部署插件"></a>安装 Hexo Git 部署插件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure><h2 id="配置-config-yml-文件"><a href="#配置-config-yml-文件" class="headerlink" title="配置 _config.yml 文件"></a>配置 <code>_config.yml</code> 文件</h2><p>在 <code>_config.yml</code> 文件中添加以下内容：  </p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">https://github.com/xulong0826/blog</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">main</span><br></code></pre></td></tr></table></figure><h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 安装项目依赖文件</span><br>npm install <br><span class="hljs-comment"># 清理生成的缓存和旧文件</span><br>npm run clean<br><span class="hljs-comment"># 构建并发布静态博客</span><br>npm run deploy<br>(hexo deploy)<br></code></pre></td></tr></table></figure><p>通过以上操作，你可以顺利完成 Git 和 Hexo 的配置与更新部署。如果还有其他问题，可以随时补充说明！</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>blog</tag>
+      
+      <tag>git</tag>
+      
+      <tag>github</tag>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
